@@ -26,7 +26,7 @@ export default class HomePage extends React.Component {
             </a>
           </div>
           <div className="container">
-            <a href="#" className="homepage--create-account">
+            <a href="/signup" className="homepage--create-account">
               create account
             </a>
           </div>

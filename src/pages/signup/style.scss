@@ -1,0 +1,21 @@
+.signup {
+  &-no--scroll {
+    --overflow: hidden;
+  }
+  &-continue-enable {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    //background-color: #09cbdf;
+    background-color: #979797;
+    border-radius: 8px;
+    color: white;
+    width: 80%;
+    height: 56px;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration-color: white;
+    text-decoration: none;
+  }
+}

@@ -32,7 +32,7 @@
   font-size: 24px;
   font-weight: 700;
   top: 35%;
-  left: 10%;
+  left: 5%;
 }
 
 .login--input {
@@ -41,28 +41,39 @@
   font-size: 24px;
   font-weight: 700;
   top: 35%;
-  right: 15%;
+  left: 50%;
+  padding-right: 10px;
   align-items: center;
 }
 .login--email {
   background-color: transparent;
   border: none;
-  width: 150px;
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  &::placeholder {
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+  }
 }
 .login--passwd {
   background-color: transparent;
   border: none;
-  width: 150px;
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+  &::placeholder {
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+  }
 }
-.login--smallcircle {
+.login--smallcircle-enable {
   position: absolute;
-  top: 80%;
+  top: 70%;
   left: 70%;
   background-color: #09cbdf;
   width: 88px;
@@ -71,14 +82,47 @@
   margin: 0 auto;
   opacity: 1;
 }
-.login--create-account {
+.login--smallcircle-disable {
   position: absolute;
-  top: 88%;
-  left: 33%;
+  top: 70%;
+  left: 70%;
+  background-color: #aca9a2;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin: 0 auto;
+  opacity: 1;
+}
+.login--forgot_passwd {
+  position: absolute;
+  top: 93%;
+  left: 5%;
   color: white;
   font-size: 14px;
   text-align: center;
   text-decoration-color: white;
   text-decoration: none;
   font-weight: bold;
+}
+.login--create_account {
+  position: absolute;
+  top: 93%;
+  right: 5%;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  text-decoration-color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.login--padding {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.arrow--left {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
 }

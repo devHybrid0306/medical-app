@@ -10,6 +10,7 @@ import "./App.css";
 
 import HomePage from "./pages/home";
 import LoginPage from "./pages/login";
+import SignUpInfo from "./pages/signup/index_info";
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={HomePage} />
               <Route exact path="/login" component={LoginPage} />
+              <Route exact path="/signup" component={SignUpInfo} />
             </Switch>
           </IonPage>
         </IonApp>

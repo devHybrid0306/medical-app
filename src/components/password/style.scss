@@ -1,0 +1,36 @@
+.password {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  color: white;
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    &::placeholder {
+      color: white;
+      text-align: left;
+      padding-left: 10px;
+    }
+  }
+
+  &__show {
+    cursor: pointer;
+    position: absolute;
+    bottom: 11px;
+    height: 16px;
+    right: 0;
+    background: transparent;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.8em;
+  }
+}
