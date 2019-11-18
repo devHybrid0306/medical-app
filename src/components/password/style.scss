@@ -8,29 +8,32 @@
 
   &__input {
     background-color: transparent;
+    //color: #09cbdf;
+    color: white;
     border: none;
     width: 80%;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     &::placeholder {
+      //color: #09cbdf;
       color: white;
       text-align: left;
       padding-left: 10px;
     }
   }
+}
 
-  &__show {
-    cursor: pointer;
-    position: absolute;
-    bottom: 11px;
-    height: 16px;
-    right: 0;
-    background: transparent;
+.green_color {
+  color: #09cbdf;
+  &::placeholder {
+    color: #09cbdf;
+  }
+}
+
+.white_color {
+  color: white;
+  &::placeholder {
     color: white;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 0.8em;
   }
 }

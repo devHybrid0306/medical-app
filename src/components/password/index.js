@@ -9,6 +9,7 @@ export default class ShowPassword extends React.Component {
       score: "null"
     };
     this.showHide = this.showHide.bind(this);
+    this.sendPassword = this.sendPassword.bind(this);
   }
 
   showHide(e) {
@@ -19,13 +20,18 @@ export default class ShowPassword extends React.Component {
     });
   }
 
+  sendPassword(event) {
+    this.props.getPasswordfromChild(event.target.value);
+  }
+
   render() {
     return (
       <div>
         <input
           type={this.state.type}
-          className="password__input"
+          className={`password__input ${this.props.color}`}
           placeholder="your password"
+          onChange={this.sendPassword}
         />
         <i
           className={

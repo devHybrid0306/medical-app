@@ -1,21 +1,240 @@
+.signup-no--scroll {
+  --overflow: hidden;
+}
+
+.display-block {
+  display: block;
+}
+.display-none {
+  display: none;
+}
 .signup {
-  &-no--scroll {
-    --overflow: hidden;
+  &-bkg {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
   }
-  &-continue-enable {
-    position: absolute;
-    top: 75%;
-    left: 10%;
-    //background-color: #09cbdf;
+
+  &-button-disable {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
     background-color: #979797;
     border-radius: 8px;
+    cursor: not-allowed;
+    pointer-events: none;
     color: white;
-    width: 80%;
-    height: 56px;
     font-size: 14px;
     padding-top: 20px;
     text-align: center;
-    text-decoration-color: white;
-    text-decoration: none;
   }
+  &-button-enable {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    background-color: #09cbdf;
+    border-radius: 8px;
+    color: white;
+    font-size: 14px;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+.signup-continue-button {
+  color: white;
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: center;
+  text-decoration-color: white;
+  text-decoration: none;
+}
+.signup--close {
+  width: 15px;
+  height: 15px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/****name***/
+.signup-section-info1 {
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signup-label-name {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  color: #605751;
+}
+.signup-input-name {
+  font-size: 16px;
+  color: #09cbdf;
+  border: none;
+  &::placeholder {
+    color: #09cbdf;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+/****name***/
+
+/****mail***/
+.signup-section-info2 {
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signup-label-mail {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  color: #605751;
+}
+.signup-input-mail {
+  font-size: 16px;
+  color: #09cbdf;
+  border: none;
+  &::placeholder {
+    color: #09cbdf;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+/****mail***/
+
+/****phone***/
+.signup-section-info3 {
+  //display: none;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signup-label-phone {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  color: #605751;
+}
+.signup-input-phone {
+  font-size: 16px;
+  color: #09cbdf;
+  border: none;
+  &::placeholder {
+    color: #09cbdf;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+/****phone***/
+
+/****password***/
+.signup-section-info4 {
+  //display: none;
+  padding-top: 70px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.signup-label-passwd {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  color: #605751;
+}
+.signup-input-passwd {
+  font-size: 16px;
+  color: #09cbdf;
+  border: none;
+  &::placeholder {
+    color: #09cbdf;
+    text-align: left;
+    padding-left: 10px;
+  }
+}
+/****password***/
+.signup-section3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.signup-state {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  margin-left: 15%;
+  position: relative;
+}
+.signup-state-bkg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #cecece;
+  border-color: #979797;
+}
+.state-progress-bar0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #09cbdf;
+  border-color: #979797;
+}
+.state-progress-bar0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #09cbdf;
+  border-color: #979797;
+}
+.state-progress-bar1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 2px;
+  background-color: #09cbdf;
+  border-color: #979797;
+}
+.state-progress-bar2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #09cbdf;
+  border-color: #979797;
+}
+.state-progress-bar3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 2px;
+  background-color: #09cbdf;
+  border-color: #979797;
+}
+.state-progress-bar4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #09cbdf;
+  border-color: #979797;
 }

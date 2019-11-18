@@ -54,7 +54,7 @@ export default class LoginPage extends React.Component<IState> {
               />
             </div>
             <div className="login--padding" onChange={this.onChange}>
-              <ShowPassword></ShowPassword>
+              <ShowPassword color="white_color"></ShowPassword>
             </div>
           </div>
           <div
